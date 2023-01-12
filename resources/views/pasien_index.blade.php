@@ -36,11 +36,11 @@
                                             <td>{{ $item->umur }}</td>
                                             <td>{{ $item->jenis_kelamin }}</td>
                                             <td>
-                                                <!-- {!! Form::open([
+                                                {!! Form::open([
                                                     'route' => ['pasien.destroy', $item->id],
                                                     'method' => 'delete',
                                                     'onsubmit' => 'return confirm("Yakin mau dihapus?")',
-                                                ]) !!} -->
+                                                ]) !!}
                                                 <a href="{{ route('pasien.edit', $item->id) }}"
                                                     class="btn btn-warning btn-sm ml-2">
                                                     Edit
